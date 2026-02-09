@@ -16,6 +16,9 @@ updates:
       - dependency-name: fetch-mock
         versions:
           - '> 9.11.0'
+      - dependency-name: eslint
+        versions:
+          - '>= 10'
     groups:
       babel:
         patterns:
