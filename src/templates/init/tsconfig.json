@@ -1,7 +1,6 @@
 {
   "extends": "middleware-development/tsconfig",
   "compilerOptions": {
-    "baseUrl": "./src",
     "esModuleInterop": true,
     "outDir": "dist"
   },

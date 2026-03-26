@@ -1,14 +1,14 @@
 {
   "extends": "@laboperator-gmbh/config/tsconfig",
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "",
     "declaration": true,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "outDir": "dist",
     "paths": {
-      "~/*": ["*"],
-      "middleware/*": ["../node_modules/middleware/dist/*"]
+      "~/*": ["./src/*"],
+      "middleware/*": ["./node_modules/middleware/dist/*"]
     }
   },
   "include": ["src", "eslint.config.d.ts"],
