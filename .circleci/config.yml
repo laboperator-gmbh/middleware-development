@@ -12,8 +12,11 @@ jobs:
       - setup_remote_docker
       - run: |
           sudo corepack enable
-          echo "nodeLinker: node-modules" > .yarnrc.yml
-          yarn init
+          cat \<< EOF > .yarnrc.yml
+          approvedGitRepositories:
+            - https://github.com/laboperator-gmbh/*
+          nodeLinker: node-modules
+          EOF
       - run: yarn add --dev middleware-development@laboperator-gmbh/middleware-development#$CIRCLE_SHA1
       - run: yarn middleware init
       # disable until middleware is updated to eslint 9
