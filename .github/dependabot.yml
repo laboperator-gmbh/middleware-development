@@ -12,6 +12,13 @@ updates:
       - dependency-name: fetch-mock
         versions:
           - '> 9.11.0'
+      # Remove all of the following once laboperator-gmbh/config is updated
+      - dependency-name: '@babel/*'
+        versions:
+          - '>= 8'
+      - dependency-name: '@types/node'
+        versions:
+          - '>= 25'
       - dependency-name: eslint
         versions:
           - '>= 10'
