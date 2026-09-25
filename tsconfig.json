@@ -1,14 +1,15 @@
 {
   "extends": "@laboperator-gmbh/config/tsconfig",
   "compilerOptions": {
-    "baseUrl": "",
     "declaration": true,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "outDir": "dist",
+    // ${configDir} resolves against the consuming project, so these keep
+    // working when a scaffolded middleware extends this config.
     "paths": {
-      "~/*": ["./src/*"],
-      "middleware/*": ["./node_modules/middleware/dist/*"]
+      "~/*": ["${configDir}/src/*"],
+      "middleware/*": ["${configDir}/node_modules/middleware/dist/*"]
     }
   },
   "include": ["src", "eslint.config.d.ts"],
