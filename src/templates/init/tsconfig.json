@@ -2,7 +2,11 @@
   "extends": "middleware-development/tsconfig",
   "compilerOptions": {
     "esModuleInterop": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    // TS 6 requires both explicitly: it no longer infers the common source
+    // directory, nor auto-includes global-only @types packages.
+    "rootDir": "src",
+    "types": ["node", "jest"]
   },
   "include": ["src"]
 }

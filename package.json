@@ -18,7 +18,7 @@
       }
     },
     "./jest.config": "./jest.config.mjs",
-    "./prettier.config": "./.prettierrc.mjs",
+    "./prettier.config": "./.prettierrc.cjs",
     "./tsconfig": "./tsconfig.json"
   },
   "scripts": {
@@ -29,8 +29,8 @@
     "@babel/core": "^7.29.7",
     "@babel/preset-env": "^7.29.7",
     "@babel/preset-typescript": "^7.29.7",
-    "@laboperator-gmbh/config": "~0.2.1",
-    "@laboperator-gmbh/eslint-config-node": "~0.2.1",
+    "@laboperator-gmbh/config": "~0.2.2",
+    "@laboperator-gmbh/eslint-config-node": "~0.2.2",
     "@types/express": "^5.0.6",
     "@types/fs-extra": "^11.0.4",
     "@types/http-errors": "^2.0.5",
@@ -41,7 +41,7 @@
     "@types/yargs": "^17.0.33",
     "babel-plugin-root-import": "^6.6.0",
     "copyfiles": "^2.4.1",
-    "eslint": "^9.39.5",
+    "eslint": "^10.10.0",
     "fetch-mock": "^9.11.0",
     "fs-extra": "^11.4.0",
     "jest": "^30.5.2",
@@ -50,7 +50,7 @@
     "nodemon": "^3.1.14",
     "prettier": "^3.9.8",
     "supertest": "^7.2.2",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.3",
     "yargs": "^17.7.2"
   },
   "packageManager": "yarn@4.17.0"

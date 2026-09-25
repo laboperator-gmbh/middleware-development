@@ -16,7 +16,7 @@ module.exports = async () => {
       'yarn add middleware@laboperator-gmbh/middleware swagger-client@3.18.5',
       { stdio: 'inherit' },
     );
-    execSync('yarn add --dev eslint@^9.39.2 prettier typescript@^5.9.3', {
+    execSync('yarn add --dev eslint@^10.10.0 prettier typescript@^6.0.3', {
       stdio: 'inherit',
     });
 
