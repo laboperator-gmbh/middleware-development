@@ -1,4 +1,5 @@
 const yargs = require('yargs');
+const { hideBin } = require('yargs/helpers');
 
 const serverOption = (command) =>
   command
@@ -21,7 +22,7 @@ const buildOption = (command) =>
     type: 'string',
   });
 
-const cli = yargs
+const cli = yargs(hideBin(process.argv))
   .parserConfiguration({ 'unknown-options-as-args': true })
   .command('init', 'Initialize a new middleware')
   .command('lint', 'Lint via eslint')
@@ -46,6 +47,6 @@ module.exports = (handlers) => {
   if (handler) {
     handler(argv);
   } else {
-    yargs.showHelp();
+    cli.showHelp();
   }
 };
