@@ -21,6 +21,13 @@ updates:
         versions:
           - '>= 10'
     groups:
+      # Listed first so every minor/patch lands here; the groups below only get majors
+      minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
       babel:
         patterns:
           - '@babel/*'
