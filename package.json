@@ -35,7 +35,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/http-errors": "^2.0.5",
     "@types/jest": "^30.0.0",
-    "@types/lodash": "^4.17.25",
+    "@types/lodash": "^4.17.26",
     "@types/morgan": "^1.9.10",
     "@types/supertest": "^7.2.1",
     "@types/yargs": "^17.0.35",
@@ -48,7 +48,7 @@
     "jest-junit": "^17.0.0",
     "lodash": "^4.18.1",
     "nodemon": "^3.1.14",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "supertest": "^7.3.1",
     "typescript": "^6.0.3",
     "yargs": "^18.2.0"
