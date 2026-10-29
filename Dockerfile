@@ -1,4 +1,4 @@
-FROM node:lts-alpine as base
+FROM node:24-alpine as base
 
 ENV NODE_ENV=production
 ENV NODE_OPTIONS=--max_old_space_size=4096

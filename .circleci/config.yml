@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   tests:
     docker:
-      - image: cimg/node:lts
+      - image: cimg/node:24
         environment:
           NODE_ENV: test
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
